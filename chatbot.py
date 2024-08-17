@@ -1,3 +1,6 @@
+
+# This commeented code is also workable showing little functionality of ChatBot
+
 '''
 import google.generativeai as genai
 import streamlit as st
@@ -32,7 +35,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure the API key
-GOOGLE_API_KEY = "AIzaSyDSWC8W9W8r1JETbQ9Sz1yTm6e_-Nedy3s"
+GOOGLE_API_KEY = "AIzaSyDSWC8W9W8r1JETbQ9Sz1yTm6e_-Nedy3s"  # you need to create your own Google API key
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize the Generative Model
@@ -97,5 +100,7 @@ with st.form(key="chat_form", clear_on_submit=True):
             st.session_state.history.append((user_input, response))
         else:
             st.warning("Please Enter A Prompt")
+
+
 
 
