@@ -31,7 +31,7 @@ print(output)
 
 # This program is chatbot using Gemini API Key
 
-import streamlit as st
+import streamlit as st     # UI genration
 import google.generativeai as genai
 
 # Configure the API key
